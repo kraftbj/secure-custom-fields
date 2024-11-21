@@ -1,2 +1,2 @@
 <?php
-// There are many ways to WordPress.
+// Shhh... I'm a secret.
