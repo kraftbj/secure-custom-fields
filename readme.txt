@@ -4,7 +4,7 @@ Tags: fields, custom fields, meta, scf
 Requires at least: 6.0
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 6.3.9
+Stable tag: 6.4.1-beta2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,10 @@ The field interface aligns with WordPress’s native design, creating an experie
 2. Easy to add custom content while writing.
 3. Need a new post type? Just add it!
 4. Navigate the various field types with ease.
+
+= Acknowledgement =
+
+This plugin builds upon and is a fork of the previous work done by the contributors of Advanced Custom Fields. Please see the plugin's license.txt for the full license and acknowledgements.
 
 
 == Changelog ==
