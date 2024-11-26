@@ -8,7 +8,7 @@ Stable tag: 6.4.1-beta2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Secure Custom Fields (SCF) offers an intuitive way for developers to enhance WordPress content management by adding extra fields and options without coding requirements.
+Secure Custom Fields (SCF) offers an intuitive way for developers to enhance WordPress content management by adding extra fields and options without coding requirements. This plugin will deactivate Advanced Custom Fields or the legacy Secure Custom Fields to avoid duplicate code errors.
 
 == Description ==
 
@@ -28,6 +28,8 @@ Beyond custom fields, SCF allows you to register new post types and taxonomies d
 
 **Accessible and user-friendly design.**
 The field interface aligns with WordPress’s native design, creating an experience that’s both accessible and easy for content creators to use.
+
+Installing this plugin will deactivate plugins with matching function names/functionality, specifically Advanced Custom Fields, Advanced Custom Fields Pro, and the legacy Secure Custom Fields plugins, to avoid code errors.
 
 = Features =
 * Clear and easy-to-use setup
