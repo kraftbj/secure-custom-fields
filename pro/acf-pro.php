@@ -28,6 +28,8 @@ if ( ! class_exists( 'acf_pro' ) ) :
 				acf_include( 'pro/admin/admin-options-page.php' );
 			}
 
+			echo 'this is a good edit'; // no error.
+
 			// actions
 			add_action( 'init', array( $this, 'register_assets' ) );
 			add_action( 'acf/init_internal_post_types', array( $this, 'register_ui_options_pages' ) );
