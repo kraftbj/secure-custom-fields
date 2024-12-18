@@ -162,6 +162,11 @@ if ( ! class_exists( 'acf_pro' ) ) :
 		}
 	}
 
+	function bad_function() {
+		return;
+		echo 'this is considered failing phpcs';
+	}
+
 
 	// instantiate
 	new acf_pro();
