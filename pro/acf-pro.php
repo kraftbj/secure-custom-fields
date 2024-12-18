@@ -28,6 +28,8 @@ if ( ! class_exists( 'acf_pro' ) ) :
 				acf_include( 'pro/admin/admin-options-page.php' );
 			}
 
+			echo 'this is a good edit'; // no error.
+
 			// actions
 			add_action( 'init', array( $this, 'register_assets' ) );
 			add_action( 'acf/init_internal_post_types', array( $this, 'register_ui_options_pages' ) );
@@ -108,7 +110,7 @@ if ( ! class_exists( 'acf_pro' ) ) :
 
 			// Register scripts.
 			wp_register_script( 'acf-pro-input', acf_get_url( "assets/build/js/pro/acf-pro-input{$min}.js" ), array( 'acf-input' ), $version );
-			wp_register_script( 'acf-pro-field-group', acf_get_url( "assets/build/js/pro/acf-pro-field-group{$min}.js" ), array( 'acf-field-group' ), $version );
+			wp_register_script( 'acf-pro-field-group', acf_get_url( "assets/build/js/pro/acf-pro-field-group{$min}.js" ), array( 'acf-field-group' ), $version ); // a good edit on a bad line.
 			wp_register_script( 'acf-pro-ui-options-page', acf_get_url( "assets/build/js/pro/acf-pro-ui-options-page{$min}.js" ), array( 'acf-input' ), $version );
 
 			// Register styles.
@@ -158,6 +160,11 @@ if ( ! class_exists( 'acf_pro' ) ) :
 
 			return $where;
 		}
+	}
+
+	function bad_function() {
+		return;
+		echo 'this is considered failing phpcs';
 	}
 
 
